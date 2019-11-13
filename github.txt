@@ -1,0 +1,13 @@
+1.Git clone                      克隆
+2.Git init
+3.Git checkout -b lsh/new_cirle 创建并进入自己的分支
+//或者Git checkout  lsh/new_cirle 进入已有分支
+   如果有问题 退出重新运行此步
+4.Git add .                工作到缓存
+5.Git commit -m “” 缓存到仓库
+6.git push origin lsh/new_circle 推到自己的分支
+7.然后git checkout develop    切换到develop默认分支
+8.先git pull origin develop   把远程develop分支的代码更新到你本地的develop分支
+9.再git merge 你修改的分支名 比如 git merge lsh/new_circle  合并分支
+10.git push origin develop 这就把你修改的代码 推到测试环境了
+11.npm run dev  试运行运行
